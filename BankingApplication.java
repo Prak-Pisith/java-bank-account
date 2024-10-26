@@ -2,13 +2,6 @@ public class BankingApplication {
     public static void main(String[] args) throws InsufficientFundsException {
         System.out.println("Welcome to the Banking Application");
 
-        // // Create a Saving Account
-        // SavingAccount savingAccount = new SavingAccount("SA-001", "Alice", 5000.00, 4.5);
-        // System.out.println(savingAccount.getAccountSummary());
-
-        // savingAccount.deposit(1000.00);
-        // System.out.println(savingAccount.getAccountSummary());
-
         try {
             
             Bank bank = new Bank();
@@ -32,7 +25,6 @@ public class BankingApplication {
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
-
 
     }
 }
